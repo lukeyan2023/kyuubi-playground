@@ -66,3 +66,10 @@ on ARM platform for testing.
 export CLICKHOUSE_IMAGE=pan3793/clickhouse-server:22.5.1-alpine-arm-grpc
 ./gradlew clean test
 ```
+具体一点儿的需求就是
+1. 最小组件，PG，ZK，S3，HMS，Kyuubi & Spark，CloudBeaver 能一键拉起
+2. 接入一些数据湖组件
+3. 内置一些demo数据
+4. 接入 Flink Engine、Trino Engine 等等
+
+完成 1 基本上拿这个改改，docker image 名字、LICENSE 等等就差不多了额
